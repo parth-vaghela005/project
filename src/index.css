@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@import "tailwindcss-animated";
+.hero-heading {
+  font-family: 'NeueSuperExp', sans-serif; /* replace with your actual font */
+  font-weight: 900; /* font-black */
+  font-size: 53px; /* default */
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 1.5rem; /* pb-6 */
+  line-height: 1.1; /* reduce line spacing, default is ~1.2–1.5 */
+}
+
+/* Responsive breakpoints */
+@media (min-width: 480px) { /* xxms */
+  .hero-heading {
+    font-size: 6rem;
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 640px) { /* sm */
+  .hero-heading {
+    font-size: 7rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    line-height: 1.05; /* can reduce more for larger screens */
+  }
+}
+
+@media (min-width: 900px) { /* lpm */
+  .hero-heading {
+    font-size: 6rem;
+    white-space: nowrap;
+    line-height: 1.05;
+  }
+}
+
+@media (min-width: 1024px) { /* lp */
+  .hero-heading {
+    font-size: 7rem;
+    line-height: 1.05;
+  }
+}
+
+@media (min-width: 1280px) { /* xl */
+  .hero-heading {
+    font-size: 8rem;
+    line-height: 1.05;
+  }
+}
+
+@media (min-width: 1536px) { /* 2xl */
+  .hero-heading {
+    font-size: 9rem;
+    line-height: 1.05;
+  }
+}
+
+html, body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: clip;   /* Better than hidden */
+}
+
+/* Hide ONLY scrollbar (optional) */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
