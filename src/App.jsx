@@ -6,6 +6,7 @@ import HeroSection from './Pages/HeroSection'
 import Offers from './Pages/Offers'
 import Ecosystem from './Pages/Ecosystem'
 import AppDemo from './Pages/AppDemo'
+import BlockParty from './Pages/BlockParty'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
     <Offers/>
     <Ecosystem/>
     <AppDemo/>
+    <BlockParty/>
   {/* <HeroSection/> */}
     </>
   )
